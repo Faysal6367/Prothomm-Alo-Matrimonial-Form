@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Matrimonial Biodata Form</title>
+
+<style>
+  body {
+    margin: 0;
+    background: #eef2f7;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    width: 800px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+  }
+
+  .section {
+    margin-bottom: 25px;
+  }
+
+  .section h3 {
+    background: #2c3e50;
+    color: white;
+    padding: 8px;
+    margin: 0 0 15px 0;
+    font-size: 16px;
+  }
+
+  .row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 12px;
+  }
+
+  .field {
+    flex: 1;
+  }
+
+  label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .options label {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #2c3e50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #1a252f;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Matrimonial Biodata Form</h1>
+
+
+  <div class="section">
+    <h3>Personal Information</h3>
+
+    <div class="row">
+      <div class="field">
+        <label>Full Name</label>
+        <input type="text">
+      </div>
+      <div class="field">
+        <label>Date of Birth</label>
+        <input type="date">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Gender</label>
+        <div class="options">
+          <label><input type="radio" name="gender"> Male</label>
+          <label><input type="radio" name="gender"> Female</label>
+          <label><input type="radio" name="gender"> Others</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Blood Group</label>
+        <select>
+          <option>Select</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>O+</option>
+          <option>O-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Height</label>
+        <input type="text" placeholder="5 ft 10 inch">
+      </div>
+      <div class="field">
+        <label>Religion</label>
+        <input type="text" placeholder="e.g., Islam, Hinduism, Christianity">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <h3>Marital Status</h3>
+    <div class="options">
+      <label><input type="radio" name="status"> Never Married</label>
+      <label><input type="radio" name="status"> Widow</label>
+      <label><input type="radio" name="status"> Divorced</label>
+      <label><input type="radio" name="status"> Married</label>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <h3>Education & Career</h3>
+
+    <div class="row">
+      <div class="field">
+        <label>Highest Qualification</label>
+        <input type="text">
+      </div>
+      <div class="field">
+        <label>Occupation</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Annual Income</label>
+        <select>
+          <option>Select</option>
+          <option>Below 30 K Taka</option>
+          <option>50 K Taka</option>
+          <option>1 Lakh Taka</option>
+          <option>Above 1 Lakh</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Work Location</label>
+        <input type="text">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <h3>Family Details</h3>
+
+    <div class="row">
+      <div class="field">
+        <label>Father's Name</label>
+        <input type="text">
+      </div>
+      <div class="field">
+        <label>Father's Occupation</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Mother's Name</label>
+        <input type="text">
+      </div>
+      <div class="field">
+        <label>Mother's Occupation</label>
+        <input type="text">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <h3>Hobbies & Lifestyle</h3>
+    <div class="options">
+      <label><input type="checkbox"> Reading</label>
+      <label><input type="checkbox"> Traveling</label>
+      <label><input type="checkbox"> Movies</label>
+      <label><input type="checkbox"> ChikiChiki</label>
+      <label><input type="checkbox"> Cooking</label>
+      <label><input type="checkbox"> Music</label>
+      <label><input type="checkbox"> Sports</label>
+      <label><input type="checkbox"> Fitness</label>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Contact Information</h3>
+
+    <div class="row">
+      <div class="field">
+        <label>Mobile Number</label>
+        <input type="text" placeholder="+880 19/17/15/13 XXXXXXXX">
+      </div>
+      <div class="field">
+        <label>Email Address</label>
+        <input type="email">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Full Address</label>
+        <textarea rows="3"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <button type="submit">Submit Biodata</button>
+
+</div>
+
+</body>
+</html>
